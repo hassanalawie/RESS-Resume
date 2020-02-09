@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Resume Upload</title>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="container ">
+        <a href="index.html"
+          ><img src="img/logo.png" alt="NewsGrid" class="logo"
+        /></a>
+        <div class="social">
+          <a href="https://www.facebook.com/RESSRyerson/" target="_blank"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a href="https://www.instagram.com/ryersonengineer/" target="_blank"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://www.youtube.com/user/RESSryerson" target="_blank"
+            ><i class="fab fa-youtube fa-2x"></i
+          ></a>
+        </div>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">Terms</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="https://ress.ca" target="_blank">RESS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Showcase -->
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading">
+          Upload Your Resume
+        </h1>
+        <p class="lead">
+          Upload your resume to the RESS Resume bank!
+        </p>
+        <ul class="butbox">
+          <li>
+            <a href="#try" class="btn btn-primary m-heading">First time</a>
+          </li>
+          <li>
+            <a href="#try-2" class="btn btn-primary m-heading"
+              >Updating Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Section Contact -->
+    <div id="try">
+        <p class ="py-2 bg-dark" >
+        </p>
+    </div>
+        <section id="contact">
+        <div class="contact-form bg-primary p-2">
+            <h2 class="l-heading">First Time User</h2>
+            <form class="container">
+            <div class="names">
+                <div class="form-group m-heading ">
+                <label for="name">First Name</label>
+                <input type="text" name="first name" id="first name" required/>
+                </div>
+                <div class="form-group m-heading">
+                <label for="name">Last Name</label>
+                <input type="text" name="last name" id="last name" required/>
+                </div>
+            </div>
+            <div class="others">
+                <div class="form-group m-heading">
+                <label for="phone">Student Number</label>
+                <input type="text" name="student" id="student" required/>
+                </div>
+                <div class="form-group m-heading">
+                <label for="phone">Program</label>
+                <input list="browsers" placeholder="Select A Program" name = "program" required/>
+                <datalist id="browsers">
+                    <option value="Aerospace Engineering"> </option>
+                    <option value="Biomedical Engineering"> </option>
+                    <option value="Chemical Engineering"> </option>
+                    <option value="Civil Engineering"> </option>
+                    <option value="Computer Engineering"> </option>
+                    <option value="Electrical Engineering"> </option>
+                    <option value="Industrial Engineering"> </option>
+                    <option value="Mechanical Engineering"> </option>
+                    <option value="Undeclared"> </option>
+                </datalist>
+                </div>
+            </div>
+            <div class="files">
+              <div class="form-group m-heading ">
+              <label for="name">Upload Resume</label>
+              <input text ="resume" id="file-upload" type="file" class="btn-circ" required/>
+              </div>
+          </div>
+            <input type="submit" value = "Submit" class ="submit btn btn-circ">
+            </form>
+        </div>
+        </section>
+    </div>
+    <!-- Section Contact -->
+    <div id="try-2">
+        <p class ="py-2 bg-dark" >
+        </p>
+    </div>
+    <section id="contact">
+    <div id="update"></div>
+      <div class="contact-form bg-secondary p-2">
+        <h2 class="l-heading">Updating Resume</h2>
+        <form class="container">
+          <div>
+            <div class="form-group m-heading">
+              <label for="phone">Student Number</label>
+              <input type="text" name="student" id="student" required/>
+              </div>
+            <div class="form-group m-heading ">
+            <label for="name">Upload Resume</label>
+            <input text ="resume" id="file-upload" type="file" class="btn-circ" required/>
+            </div>
+        </div>
+          <input type="submit" value = "Submit" class ="submit btn btn-circ">
+        </form>
+      </div>
+    </div>
+    </section>
+    <!-- Footer -->
+    <footer id="main-footer" class = "py-2">
+        <div class="container footer-container">
+            <div>
+                <img src="./img/justlogo.png" >
+                <p>RYERSON ENGINEERING STUDENT SOCIETY <br>
+                  KHE123 – 350 Victoria St <br>
+                  
+                  Toronto, ON M5B 2K3 <br>
+                  
+                  (416) 979-5000 X 2086</p>
+            </div>
+            <div>
+                <h3>Email Newsletter</h3>
+                <p>Enter your email to sign up for our newsletter</p>
+                <form name = "contact" method = "POST" data-netlify = "true">
+                    <input type="email" name = "email" placeholder="Enter Email...">
+                    <input type="submit" value="Subscribe" class= "btn btn-primary">
+                </form>
+            </div>
+            <div>
+                <h3>Site Links</h3>
+                <ul class="list">
+                    <li><a href="support.html">Help & Support</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Designed by Hassan Alawie <br> Ryerson Engineering Student Society &copy; Established 1998 </p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
