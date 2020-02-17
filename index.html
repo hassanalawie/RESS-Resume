@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,6 +13,7 @@
     <title>Resume Upload</title>
   </head>
   <body>
+  <?php echo do_messages($insert); ?>
     <nav id="main-nav">
       <div class="container ">
         <a href="index.html"
@@ -66,26 +68,29 @@
         <section id="contact">
         <div class="contact-form bg-primary p-2">
             <h2 class="l-heading">First Time User</h2>
-          <form class="container" name="contact" method="POST" data-netlify="true">
+          <form class="container" name="contact" method="POST">
+            <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
+            <input type="hidden" name="form_action" value="<?php echo $form_action; ?>">
+            <input type="hidden" name="nonce" value="<?php echo $nonce; ?>">
             <div class="names">
                 <div class="form-group m-heading ">
                 <label for="name">First Name</label>
-                <input type="text" name="first name" id="first name" required/>
+                <input type="text" class="text" name="fname" placeholder="Enter your First name" required>
                 </div>
                 <div class="form-group m-heading">
                 <label for="name">Last Name</label>
-                <input type="text" name="last name" id="last name" required/>
+                <input type="text" class="text" name="lname" placeholder="Enter your Last name" required>
                 </div>
             </div>
             <div class="others">
                 <div class="form-group m-heading">
                 <label for="phone">Student Number</label>
-                <input type="text" name="student" id="student" required/>
+                <input type="text" name="studentnumber" placeholder="Enter your Student Number" required/>
                 </div>
                 <div class="form-group m-heading">
                 <label for="phone">Program</label>
-                <input list="browsers" placeholder="Select A Program" name = "program" required/>
-                <datalist id="browsers">
+                <input list="program" placeholder="Select A Program" name = "program" required/>
+                <datalist id="program">
                     <option value="Aerospace Engineering"> </option>
                     <option value="Biomedical Engineering"> </option>
                     <option value="Chemical Engineering"> </option>
@@ -101,7 +106,7 @@
             <div class="files">
               <div class="form-group m-heading ">
               <label for="name">Upload Resume</label>
-              <input text ="resume" id="file-upload" type="file" class="btn-circ" required/>
+              <input name = "resume" type="file" class="btn-circ" required/>
               </div>
            </div>
             <input type="submit" value = "Submit" class ="submit btn btn-circ">
@@ -123,12 +128,11 @@
             <div class="form-group m-heading">
               <label for="phone">Student Number</label>
               <input type="text" name="student" id="student" required/>
-              </div>
-            <div class="form-group m-heading ">
-            <label for="name">Upload Resume</label>
-            <input text ="resume" id="file-upload" type="file" class="btn-circ" required/>
             </div>
-         </div>
+            <div class="form-group m-heading ">
+              <label for="name">Upload Resume</label>
+            </div>
+          </div>
           <input type="submit" value = "Submit" class ="submit btn btn-circ">
         </form>
       </div>
