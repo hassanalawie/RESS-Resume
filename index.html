@@ -9,11 +9,12 @@
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Resume Upload</title>
   </head>
   <body>
     <nav id="main-nav">
-      <div class="container ">
+      <div class="container">
         <a href="index.html"
           ><img src="img/logo.png" alt="NewsGrid" class="logo"
         /></a>
@@ -48,10 +49,10 @@
         </p>
         <ul class="butbox">
           <li>
-            <a href="#try" class="btn btn-primary m-heading ftu">First Time Upload</a>
+            <a href="#try" class="btn btn-primary ftu">First Time Upload</a>
           </li>
           <li>
-            <a href="#try-2" class="btn btn-primary m-heading stu"
+            <a href="#try-2" class="btn btn-primary stu"
               >Updating Resume</a
             >
           </li>
@@ -66,7 +67,7 @@
         <section id="contact">
         <div class="contact-form bg-light p-2">
           <h2 class="l-heading">First Time Upload</h2>
-          <form class="container text-primary" name="contact" method="POST" data-netlify="true">
+          <form class="container text-primary" name="database" data-netlify-recaptcha="true" method="POST" data-netlify="true">
             <div class="names">
               <div class="form-group m-heading ">
                 <label class="space-right" for="name">First Name</label>
@@ -103,6 +104,9 @@
                 <label for="name">Upload Resume</label>
                 <input name = "resume" type="file" class="btn-circ" required/>
               </div>
+           </div>
+           <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
            </div>
             <input type="submit" value = "Submit" class ="submit btn btn-circ">
           </form>

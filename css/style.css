@@ -143,6 +143,10 @@ h6 {
 .p-3 {
   padding: 3rem;
 }
+.my-2 {
+  margin: 2rem 0;
+}
+
 .m-1 {
   margin: 1rem;
 }
@@ -297,6 +301,7 @@ h6 {
   margin: 0.5rem 1rem;
   padding: 1rem 15vw;
   border-radius: 10px;
+  font-size: 1.25rem;
 }
 
 /* FIRST TIME */
