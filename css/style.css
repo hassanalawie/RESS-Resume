@@ -299,7 +299,7 @@ h6 {
 
 #showcase .showcase-content a {
   margin: 0.5rem 1rem;
-  padding: 1rem 15vw;
+  padding: 1rem 20vw;
   border-radius: 10px;
   font-size: 1.25rem;
 }
@@ -402,7 +402,7 @@ input[type="file"] {
 }
 
 input {
-  font-size: smaller;
+  font-size: 1rem;
 }
 
 /* Contact */
