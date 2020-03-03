@@ -401,6 +401,10 @@ input[type="file"] {
   margin-right: 1.6rem;
 }
 
+input {
+  font-size: smaller;
+}
+
 /* Contact */
 #contact-form {
   margin-bottom: 2rem;
