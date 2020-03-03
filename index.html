@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +12,6 @@
     <title>Resume Upload</title>
   </head>
   <body>
-  <?php echo do_messages($insert); ?>
     <nav id="main-nav">
       <div class="container ">
         <a href="index.html"
@@ -50,10 +48,10 @@
         </p>
         <ul class="butbox">
           <li>
-            <a href="#try" class="btn btn-primary m-heading">First time</a>
+            <a href="#try" class="btn btn-primary m-heading ftu">First Time Upload</a>
           </li>
           <li>
-            <a href="#try-2" class="btn btn-primary m-heading"
+            <a href="#try-2" class="btn btn-primary m-heading stu"
               >Updating Resume</a
             >
           </li>
@@ -66,15 +64,12 @@
         </p>
     </div>
         <section id="contact">
-        <div class="contact-form bg-primary p-2">
-            <h2 class="l-heading">First Time User</h2>
-          <form class="container" name="contact" method="POST">
-            <input type="hidden" name="timestamp" value="<?php echo $timestamp; ?>">
-            <input type="hidden" name="form_action" value="<?php echo $form_action; ?>">
-            <input type="hidden" name="nonce" value="<?php echo $nonce; ?>">
+        <div class="contact-form bg-light p-2">
+          <h2 class="l-heading">First Time Upload</h2>
+          <form class="container text-primary" name="contact" method="POST">
             <div class="names">
                 <div class="form-group m-heading ">
-                <label for="name">First Name</label>
+                <label class="space-right" for="name">First Name</label>
                 <input type="text" class="text" name="fname" placeholder="Enter your First name" required>
                 </div>
                 <div class="form-group m-heading">
@@ -83,30 +78,30 @@
                 </div>
             </div>
             <div class="others">
-                <div class="form-group m-heading">
+              <div class="form-group m-heading">
                 <label for="phone">Student Number</label>
                 <input type="text" name="studentnumber" placeholder="Enter your Student Number" required/>
-                </div>
-                <div class="form-group m-heading">
-                <label for="phone">Program</label>
+              </div>
+              <div class="form-group m-heading">
+                <label class="space-right-2" for="phone">Program</label>
                 <input list="program" placeholder="Select A Program" name = "program" required/>
                 <datalist id="program">
-                    <option value="Aerospace Engineering"> </option>
-                    <option value="Biomedical Engineering"> </option>
-                    <option value="Chemical Engineering"> </option>
-                    <option value="Civil Engineering"> </option>
-                    <option value="Computer Engineering"> </option>
-                    <option value="Electrical Engineering"> </option>
-                    <option value="Industrial Engineering"> </option>
-                    <option value="Mechanical Engineering"> </option>
-                    <option value="Undeclared"> </option>
+                  <option value="Aerospace Engineering"> </option>
+                  <option value="Biomedical Engineering"> </option>
+                  <option value="Chemical Engineering"> </option>
+                  <option value="Civil Engineering"> </option>
+                  <option value="Computer Engineering"> </option>
+                  <option value="Electrical Engineering"> </option>
+                  <option value="Industrial Engineering"> </option>
+                  <option value="Mechanical Engineering"> </option>
+                  <option value="Undeclared"> </option>
                 </datalist>
-                </div>
+              </div>
             </div>
             <div class="files">
               <div class="form-group m-heading ">
-              <label for="name">Upload Resume</label>
-              <input name = "resume" type="file" class="btn-circ" required/>
+                <label for="name">Upload Resume</label>
+                <input name = "resume" type="file" class="btn-circ" required/>
               </div>
            </div>
             <input type="submit" value = "Submit" class ="submit btn btn-circ">
@@ -121,13 +116,13 @@
     </div>
     <section id="contact">
     <div id="update"></div>
-      <div class="contact-form bg-secondary p-2">
-        <h2 class="l-heading">Updating Resume</h2>
-        <form class="container" name="contact" method="POST" data-netlify="true">
+      <div class="contact-form bg-light p-2">
+        <h2 class="l-heading ">Updating Resume</h2>
+        <form class="container text-primary" name="contact" method="POST" data-netlify="true">
           <div>
             <div class="form-group m-heading">
               <label for="phone">Student Number</label>
-              <input type="text" name="student" id="student" required/>
+              <input type="text" name="student" id="student" placeholder="Enter your Student Number" required/>
             </div>
             <div class="form-group m-heading ">
               <label for="name">Upload Resume</label>
