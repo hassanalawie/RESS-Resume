@@ -131,9 +131,26 @@
             </div>
           </div>
           <div>
-            <div class="form-group m-heading">
-              <label for="phone">Student Number</label>
-              <input type="text" name="studentnumber" id="student" placeholder="Enter your Student Number" required/>
+            <div class="others">
+              <div class="form-group m-heading">
+                <label for="phone">Student Number</label>
+                <input type="text" name="studentnumber" placeholder="Enter your Student Number" required/>
+              </div>
+              <div class="form-group m-heading">
+                <label class="space-right-2" for="phone">Program</label>
+                <input list="program" placeholder="Select A Program" name = "program" required/>
+                <datalist id="program">
+                  <option value="Aerospace Engineering"> </option>
+                  <option value="Biomedical Engineering"> </option>
+                  <option value="Chemical Engineering"> </option>
+                  <option value="Civil Engineering"> </option>
+                  <option value="Computer Engineering"> </option>
+                  <option value="Electrical Engineering"> </option>
+                  <option value="Industrial Engineering"> </option>
+                  <option value="Mechanical Engineering"> </option>
+                  <option value="Undeclared"></option>
+                </datalist>
+              </div>
             </div>
             <div class="form-group m-heading ">
               <label for="name">Upload Resume</label>
