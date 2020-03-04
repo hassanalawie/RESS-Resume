@@ -299,20 +299,36 @@ h6 {
   margin-bottom: 3rem;
 }
 
-#showcase .showcase-content a {
+#showcase .showcase-content .butbox a {
   margin: 0.5rem 1rem;
   padding: 1rem 20vw;
   border-radius: 10px;
   font-size: 1.25rem;
 }
 
+#showcase .showcase-content .butbox a:hover {
+  background: var(--secondary-color);
+}
+
+.opac {
+  opacity: 100%;
+}
+
+.lead a {
+  color: var(--light-color);
+  font-weight: bold;
+  margin: none;
+  padding: none;
+  background: none;
+}
+
 /* FIRST TIME */
-#try {
+#sec1 {
   margin: 0;
   padding: 0;
 }
 
-#try-2 {
+#sec2 {
   margin: 0;
   padding: 0;
 }
