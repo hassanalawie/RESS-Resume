@@ -9,30 +9,19 @@
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Resume Upload</title>
   </head>
   <body>
     <nav id="main-nav">
       <div class="container">
-        <a href="index.html"
-          ><img src="img/logo.png" alt="NewsGrid" class="logo"
+        <a href="https://ress.ca" target="_blank"
+          ><img src="img/logo.png" alt="RESSLOGO" class="logo"
         /></a>
-        <div class="social">
-          <a href="https://www.facebook.com/RESSRyerson/" target="_blank"
-            ><i class="fab fa-facebook fa-2x"></i
-          ></a>
-          <a href="https://www.instagram.com/ryersonengineer/" target="_blank"
-            ><i class="fab fa-instagram fa-2x"></i
-          ></a>
-          <a href="https://www.youtube.com/user/RESSryerson" target="_blank"
-            ><i class="fab fa-youtube fa-2x"></i
-          ></a>
-        </div>
         <ul>
           <li><a href="index.html" class="current">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="terms.html">Terms</a></li>
           <li><a href="support.html">Support</a></li>
           <li><a href="https://ress.ca" target="_blank">RESS</a></li>
         </ul>
@@ -59,6 +48,25 @@
         </ul>
       </div>
     </header>
+    <div id="sec">
+      <p class ="py-2 bg-dark" >
+      </p>
+   </div>
+    <section id="clients" class = "">
+      <div class="container">
+          <h2 class="l-heading center">
+              Our
+               Partners
+          </h2>
+          <div class="items ">
+              <div><img src="./img/logo1.png" alt="Client"></div>
+              <div><img src="./img/logo1.png" alt="Client"></div>
+              <div><img src="./img/logo1.png" alt="Client"></div>
+              <div><img src="./img/logo1.png" alt="Client"></div>
+              <div><img src="./img/logo1.png" alt="Client"></div>
+          </div>
+      </div>
+  </section>
     <!-- Section Contact -->
     <div id="sec1">
         <p class ="py-2 bg-dark" >
@@ -66,7 +74,7 @@
     </div>
         <section id="contact">
         <div class="contact-form bg-light p-2">
-          <h2 class="l-heading">First Time Upload</h2>
+          <h2 class="l-heading center">First Time Upload</h2>
           <form class="container text-primary" name="database" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div class="names">
               <div class="form-group m-heading ">
@@ -99,16 +107,25 @@
                 </datalist>
               </div>
             </div>
-            <div class="files">
+            <div class="names">
               <div class="form-group m-heading ">
                 <label for="name">Upload Resume</label>
                 <input name = "resume" type="file" class="btn-circ" required/>
               </div>
-           </div>
+              <div class="form-group m-heading resume">
+                <label class="spacing" for="name">PIN</label>        
+                  <div class="pin">      
+                    <input type="number" class="text" name="PIN" required>               
+                    <p class="smalltext space-left"> Please select a <span class ="bold text-primary" >four</span> digit pin. You<br> will need
+                    this in case you'd like to<br> update your resume in the future. <br> Please keep your pin a secret and <br>jot it down somewhere. </p>
+                </div>  
+              </div>
+            </div>
            <div class="my-2">
             <div data-netlify-recaptcha="true"></div>
           </div>
             <input type="submit" value = "Submit" class ="submit btn btn-circ">
+            <p class="smalltext"> By clicking this button you have agreed to the <a href="terms.html">Terms & Service</a></p>
           </form>
         </div>
         </section>
@@ -121,7 +138,7 @@
     <section id="contact">
     <div id="update"></div>
       <div class="contact-form bg-light p-2">
-        <h2 class="l-heading ">Updating Resume</h2>
+        <h2 class="l-heading center ">Updating Resume</h2>
         <form class="container text-primary" name="contact" method="POST" data-netlify="true">
           <div class="names">
             <div class="form-group m-heading ">
@@ -155,12 +172,22 @@
                 </datalist>
               </div>
             </div>
-            <div class="form-group m-heading ">
-              <label for="name">Upload Resume</label>
-              <input name = "resume" type="file" class="btn-circ" required/>
+            <div class="names">
+              <div class="form-group m-heading ">
+                <label for="name">Upload Resume</label>
+                <input name = "resume" type="file" class="btn-circ " required/>
+              </div>
+              <div class="form-group m-heading resume">
+                <label class="spacing" for="name">PIN</label>        
+                  <div class="pin">      
+                    <input type="number" class="text" name="PIN" required>               
+                    <p class="smalltext space-left"> Please input the PIN you chose <br> when you first uploaded your <br> resume. </p>
+                </div>  
+              </div>
             </div>
           </div>
           <input type="submit" value = "Submit" class ="submit btn btn-circ">
+          <p class="smalltext"> By clicking this button you have agreed to the <a href="terms.html">Terms & Service</a></p>
         </form>
       </div>
     </div>
@@ -168,49 +195,6 @@
     <!-- Footer -->
     <footer id="main-footer" class="py-2">
       <div class="container footer-container">
-        <div>
-          <img src="./img/justlogo.png" />
-          <p>
-            RYERSON ENGINEERING STUDENT SOCIETY <br />
-            KHE123 – 350 Victoria St <br />
-
-            Toronto, ON M5B 2K3 <br />
-
-            (416) 979-5000 X 2086
-          </p>
-        </div>
-        <div>
-          <h3>Site Links</h3>
-          <ul class="list">
-            <li><a href="support.html">Help & Support</a></li>
-            <li><a href="terms.html">Terms</a></li>
-            <li><a href="about.html">About Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>RESS Links</h3>
-          <ul class="list">
-            <li><a href="https://ress.ca/calendar/">Calendar</a></li>
-            <li><a href="https://ress.ca/all-listings/">Directory</a></li>
-            <li><a href="https://ress.ca/external/">External Portal</a></li>
-            <li>
-              <a href="https://mega.nz/#F!Lm5jhajQ!_89BUlMPB7NvY5ObJ5UKnw"
-                >Exam Bank</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Statements</h3>
-          <ul class="list">
-            <li>
-              <a href="https://ress.ca/land-acknowledgement/"
-                >Land Acknowledgement</a
-              >
-            </li>
-            <li><a href="https://ress.ca/accessibility/">Accessibility</a></li>
-          </ul>
-        </div>
         <div>
           <p>
             Designed by Hassan Alawie <br />
